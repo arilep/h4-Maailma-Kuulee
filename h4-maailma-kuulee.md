@@ -119,9 +119,9 @@ Tämän jälkeen loin uuden käyttäjän 'ap'
 
 Tämän jälkeen kopioin Root:n SSH-asetukset, jotta kirjautuminen onnistui uudella käyttäjällä.
 
-```sudo cp -rvn /root/.ssh/ /home/jurpo/``` <-- kopiointi
+```sudo cp -rvn /root/.ssh/ /home/ap/``` <-- kopiointi
 
-```sudo chown -R ap:ap /home/jurpo/``` <-- oikeudet hakemistoihin uudella käyttäjällä
+```sudo chown -R ap:ap /home/ap/``` <-- oikeudet hakemistoihin uudella käyttäjällä
 
 ![image](https://github.com/user-attachments/assets/7a5e2b4b-3f0d-447d-a27c-bd3104bb8da2)
 
@@ -183,6 +183,11 @@ Luodaan sivu:
 
 ![image](https://github.com/user-attachments/assets/b6bec95b-83a6-4ae1-9295-3e70593fb9f6)
 
+Ja lisätään sivulle sisältöä:
+
+![image](https://github.com/user-attachments/assets/b398c68e-75f0-4e0a-a484-d2643fe282fb)
+
+
 Kun yritin avata sivuston, sain vihrheen 403. Ongelma oli tiedostojen käyttöoikeuksissa (verkkopalvelimella ei ollut pääsyä kotihakemistoni resursseihin).
 
 Sain ratkaistua tämän ajamalla alla olevan komennon, jolla annetaan luku- ja suoritusoikeudet (read & execute).
@@ -193,4 +198,12 @@ sudo chmod 755 /home/ap
 Ja sitten lähti pelittämään:
 
 ![image](https://github.com/user-attachments/assets/c4e57c34-59e8-4002-bb77-c8733cdefa7e)
+
+
+### Lähteet
+
+Karvinen, T. 19.9.2017. First Steps on a New Virtual Private Server. Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/. Luettu 9.2.2025.
+
+Lehto, S. 14.2.2022. Teoriasta käytäntöön pilvipalvelimen avulla (h4). Luettavissa: https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/. Luettu 9.2.2025.
+
 
