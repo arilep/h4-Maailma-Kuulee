@@ -183,13 +183,14 @@ Luodaan sivu:
 
 ![image](https://github.com/user-attachments/assets/b6bec95b-83a6-4ae1-9295-3e70593fb9f6)
 
-When I tried to access the website, I got an error 403, because of file permissions
+Kun yritin avata sivuston, sain vihrheen 403. Ongelma oli tiedostojen käyttöoikeuksissa (verkkopalvelimella ei ollut pääsyä kotihakemistoni resursseihin).
 
-This is because I was attempting to access resources in my home directory, which the web servers did not have access to (apache2)
-
-I solved this by
+Sain ratkaistua tämän ajamalla alla olevan komennon, jolla annetaan luku- ja suoritusoikeudet (read & execute).
 
 ```bash
 sudo chmod 755 /home/ap
 ```
-Apache webserver didn't have read access to my home directory, when you run this groups and others have read and execute rights.
+Ja sitten lähti pelittämään:
+
+![image](https://github.com/user-attachments/assets/c4e57c34-59e8-4002-bb77-c8733cdefa7e)
+
