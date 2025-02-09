@@ -190,6 +190,8 @@ Ja lisätään sivulle sisältöä:
 
 Kun yritin avata sivuston, sain virheen 403. Ongelma oli tiedostojen käyttöoikeuksissa (verkkopalvelimella ei ollut pääsyä kotihakemistoni resursseihin).
 
+![image](https://github.com/user-attachments/assets/af377179-7c0e-4740-8664-be545a92f9f2)
+
 Sain ratkaistua tämän ajamalla alla olevan komennon, jolla annetaan luku- ja suoritusoikeudet (read & execute).
 
 ```bash
