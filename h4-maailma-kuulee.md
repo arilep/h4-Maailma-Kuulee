@@ -188,7 +188,7 @@ Ja lisätään sivulle sisältöä:
 ![image](https://github.com/user-attachments/assets/b398c68e-75f0-4e0a-a484-d2643fe282fb)
 
 
-Kun yritin avata sivuston, sain vihrheen 403. Ongelma oli tiedostojen käyttöoikeuksissa (verkkopalvelimella ei ollut pääsyä kotihakemistoni resursseihin).
+Kun yritin avata sivuston, sain virheen 403. Ongelma oli tiedostojen käyttöoikeuksissa (verkkopalvelimella ei ollut pääsyä kotihakemistoni resursseihin).
 
 Sain ratkaistua tämän ajamalla alla olevan komennon, jolla annetaan luku- ja suoritusoikeudet (read & execute).
 
